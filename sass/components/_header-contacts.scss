@@ -1,0 +1,23 @@
+.contacts__list {
+    display: flex;
+    margin-left: auto;
+    
+}
+.contacts__list :not(:first-child) {
+    margin-left: 50px;
+}
+.contacts__list a {
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: var(--hower-color);
+    }
+}
+
+

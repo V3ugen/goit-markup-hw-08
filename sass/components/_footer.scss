@@ -1,0 +1,142 @@
+.footer-bg {
+    background-color: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.logo__footer {
+    color: var(--primary-bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+}
+.logo__footer {
+    color: var(--primary-bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+}
+
+.address {
+    margin-top: 20px;
+    display: block;
+}
+
+.address__link {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.address__item {
+    margin-top: 9px;
+}
+
+.address__link--contacts {
+    font-style: normal;
+    color: var(--footer-link-color);
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.join__title {
+    font-weight: 700;
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+
+    line-height: 1.17;
+}
+
+.join__link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--border-color);
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        fill: var(--border-pict-color);
+        background-color: var(--hower-color);
+    }
+}
+
+.join__icon {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+
+.social--footer {
+    margin-top: 20px;
+}
+
+.subscribe-box {
+    margin-left: auto;
+}
+
+.button--subscribe {
+    color: var(--primary-bg-color);
+    background-color: var(--hower-color);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 0;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    margin-top: 20px;
+    max-width: 200px;
+    margin-left: 12px;
+    padding: 0 28px;
+}
+
+.button--subscribe svg {
+    margin-left: 10px;
+}
+
+.subscribe-box form {
+    display: flex;
+}
+
+.subscribe-box input {
+    padding: 15px;
+    width: 358px;
+    margin-top: 20px;
+    background-color: var(--bg-color);
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--border-pict-color);
+
+    &:focus{
+        outline: 0;
+    }
+}

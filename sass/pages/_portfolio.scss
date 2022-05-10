@@ -1,0 +1,114 @@
+.our-projects {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center
+}
+
+.our-projects .our-projects__btn+.our-projects__btn {
+    margin-left: 8px;
+}
+
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 22px;
+
+    background: var(--button-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: var(--hower-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+        color: var(--button-color);
+    }
+}
+
+.our-projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/3);
+
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.our-projects__item {
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+.our-projects__link {
+    display: block;
+
+    &:hover {
+        box-shadow: 0px 4px 4px 0px var(--border-shadow-color);
+    }
+}
+
+.our-projects-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+    padding: 63px 24px;
+    color: var(--primary-bg-color);
+    font-size: 18px;
+    line-height: 1.55;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .our-projects__link:hover & {
+        transform: translateY(0%);
+        background: rgba(33, 150, 243, 0.9);
+    
+    }
+}
+
+.our-projects__card {
+    border-left: 1px solid var(--border-pict-color);
+    border-right: 1px solid var(--border-pict-color);
+    border-bottom: 1px solid var(--border-pict-color);
+
+    padding: 20px 24px;
+}
+
+.our-projects__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--secondary-color);
+}
+
+.our-projects__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+
+    color: var(--primary-text-color);
+    margin-top: 4px;
+}
