@@ -107,11 +107,10 @@ body {
   display: block;
   font-family: 'Raleway', sans-serif;
   color: var(--logo-color);
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   font-weight: 700;
-  padding-bottom: 24px;
-  padding-top: 25px;
+  padding: 16px 15px;
   -webkit-transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -570,6 +569,27 @@ body {
   margin-left: auto;
 }
 
+.subscribe-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe-box input {
+  padding: 15px;
+  width: 358px;
+  margin-top: 20px;
+  background-color: var(--bg-color);
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--border-pict-color);
+}
+
+.subscribe-box input:focus {
+  outline: 0;
+}
+
 .button--subscribe {
   color: var(--primary-bg-color);
   background-color: var(--hower-color);
@@ -594,27 +614,6 @@ body {
 
 .button--subscribe svg {
   margin-left: 10px;
-}
-
-.subscribe-box form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.subscribe-box input {
-  padding: 15px;
-  width: 358px;
-  margin-top: 20px;
-  background-color: var(--bg-color);
-  border: 1px solid;
-  border-color: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  color: var(--border-pict-color);
-}
-
-.subscribe-box input:focus {
-  outline: 0;
 }
 
 .backdrop {
@@ -715,12 +714,6 @@ body {
   position: relative;
 }
 
-.modal-field label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.1;
-}
-
 .modal-field input {
   margin: 0;
   padding: 11px 11px 11px 42px;
@@ -734,6 +727,12 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--hower-color);
   outline: 0;
+}
+
+.modal-field label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.1;
 }
 
 .modal__icon {

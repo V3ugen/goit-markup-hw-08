@@ -96,6 +96,24 @@
 
 .subscribe-box {
     margin-left: auto;
+
+    form {
+        display: flex;
+    }
+    input {
+        padding: 15px;
+        width: 358px;
+        margin-top: 20px;
+        background-color: var(--bg-color);
+        border: 1px solid;
+        border-color: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        color: var(--border-pict-color);
+    
+        &:focus {
+            outline: 0;
+            }
+    }
 }
 
 .button--subscribe {
@@ -116,27 +134,8 @@
     max-width: 200px;
     margin-left: 12px;
     padding: 0 28px;
-}
 
-.button--subscribe svg {
-    margin-left: 10px;
-}
-
-.subscribe-box form {
-    display: flex;
-}
-
-.subscribe-box input {
-    padding: 15px;
-    width: 358px;
-    margin-top: 20px;
-    background-color: var(--bg-color);
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    color: var(--border-pict-color);
-
-    &:focus{
-        outline: 0;
+    svg{
+        margin-left: 10px;
     }
 }
