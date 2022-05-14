@@ -29,4 +29,9 @@
     fill: var(--icon-color);
     width: 210px;
         height: 92px;
+    &:hover {
+            
+            fill: var(--hower-color);
+            
+        }
 }

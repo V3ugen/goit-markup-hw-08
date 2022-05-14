@@ -3,6 +3,9 @@
 
     @media (min-width:$tablet) {
         border-bottom: 1px solid var(--border-color);
+        
+
+
     }
     
 }
@@ -12,6 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+        @media (min-width:$tablet) {
+            padding-bottom: 0 ;
+                align-items: baseline;
+            }
 }
 
 .logo {
@@ -28,7 +35,9 @@
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
         0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-
+    @media (min-width:$tablet) {
+    
+    }
     @media screen and (min-width:$desktop) {
         font-size: 26px;
         line-height: 1.19;
@@ -54,6 +63,10 @@
     
     &:hover {
         fill: var(--hower-color);
+    
+    }
+    @media (min-width:$tablet) {
+        display: none;
     }
 }
 .menu-button .icon-close {
@@ -86,13 +99,36 @@
         display: block;
         padding: 48px 0 48px 40px;
     }
+    @media (min-width:$tablet) {
+        &.is-open{
+            padding: 0;
+        }
+        display: flex;
+        position: static;
+        width: auto;
+        height: auto;
+        
+    }
 }
 
 .navigation__list {
     margin-bottom: 302px;
+    @media (min-width:$tablet) {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        
+        }
 }
+@media (min-width:$tablet) {
+    .navigation__item {
+    
+        &:not(:last-child){
+        margin-right: 50px;
+            }
+        }
+    }
 
-.navigation__item {}
 
 .navigation__link {
     color: var(--secondary-color);
@@ -110,22 +146,54 @@
     &:active{
         color: var(--hower-color);
     }
+    @media (min-width:$tablet) {
+        font-size: 14px;
+        padding-bottom: 0;
+        
+    }
 }
 
 .navigation--active {
     color: var(--hower-color);
+    position: relative;
+    @media (min-width:$tablet) {
+        &::after {
+                content: "";
+                position: absolute;
+                bottom: -26px;
+                left: 0;
+                width: 100%;
+                border: 2px solid var(--hower-color);
+                border-radius: 2px;
+                background-color: var(--hower-color);
+            }
+    }
+    
 }
 
 .contacts__list {
     display: flex;
     flex-direction: column-reverse;
+
+        @media (min-width:$tablet) {
+            margin-left:84px;
+            padding-bottom: 21px;
+            flex-direction: column;
+            display: block;
+            & li:first-child{
+                margin-bottom: 10px;
+            }
+        }
 }
 
 .navigation__email {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--primary-text-color);
+    
 
-
-
-    @media screen and (max-width:787px){
+    @media screen and (max-width:767px){
         display: block;
         font-size: 24px;
         font-weight: 500;
@@ -137,16 +205,23 @@
 }
 
 .navigation__icon {
-    
-    @media screen and (max-width:787px) {
+    margin-right: 8px;
+    height: 10;
+    width: 14;
+    fill:var(--primary-text-color) ;
+    @media screen and (max-width:767px) {
             display: none;
         }
 }
 
 .navigation__tel {
-    
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--primary-text-color);
 
-    @media screen and (max-width:787px){
+
+    @media screen and (max-width:767px){
         display: block;
         font-size: 34px;
         font-weight: 500;
