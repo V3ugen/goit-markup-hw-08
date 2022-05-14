@@ -1,5 +1,89 @@
-.hero {}
 
-.hero__title {}
+.hero {
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
+    height:421px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg480.jpg);
+    background-repeat: no-repeat;
+    background-size: 480px 421px;
+    background-color: #2f303a;
+    text-align: center;
 
-.button--main {}
+@media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) { 
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg480@2x.jpg);
+    }
+
+
+
+@media screen and (min-width:$tablet) {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg768.jpg);
+    background-size: 768px 400px;
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bg768@2x.jpg);
+        }
+}
+
+    @media screen and (min-width:1200px) {
+    max-width:1600px;
+    height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-size: 1600px 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg1200.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bg1200@2x.jpg);
+        }
+
+    }
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    color: var(--primary-bg-color);
+
+    margin-bottom: 30px;
+
+
+}
+
+.button--main {
+    background-color: var(--hower-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--button-color);
+    cursor: pointer;
+
+    padding: 10px 32px;
+    min-width: 200px;
+}

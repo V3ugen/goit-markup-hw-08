@@ -7,6 +7,8 @@
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -27,6 +29,11 @@
         0px 1px 1px rgba(0, 0, 0, .14),
         0px 2px 1px rgba(0, 0, 0, .20);
     border-radius: 4px;
+
+    @media (min-width: $desktop) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .button--close {
@@ -194,21 +201,21 @@
 }
 
 .button--send {
-        color: var(--primary-bg-color);
-            background-color: var(--hower-color);
+    color: var(--primary-bg-color);
+        background-color: var(--hower-color);
         
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            border: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
         
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.87;
-            letter-spacing: 0.06em;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
         
-            cursor: pointer;
-            padding: 10px 55px;
-            max-width: 200px;
-            margin-left: auto;
-            margin-right: auto;
+        cursor: pointer;
+        padding: 10px 55px;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
 }
