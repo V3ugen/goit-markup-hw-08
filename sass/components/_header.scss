@@ -3,9 +3,6 @@
 
     @media (min-width:$tablet) {
         border-bottom: 1px solid var(--border-color);
-        
-
-
     }
     
 }
@@ -17,7 +14,14 @@
     justify-content: space-between;
         @media (min-width:$tablet) {
             padding-bottom: 0 ;
-                align-items: baseline;
+            align-items: baseline;
+            }
+        @media (min-width:$desktop) {
+            padding-top: 0;
+            justify-content: center;
+            & nav{
+                margin-left: 93px;
+            }
             }
 }
 
@@ -109,10 +113,15 @@
         height: auto;
         
     }
+    @media screen and (min-width:$desktop) {
+        align-items: baseline;
+    }
+
 }
 
 .navigation__list {
     margin-bottom: 302px;
+
     @media (min-width:$tablet) {
         margin-bottom: 0;
         display: flex;
@@ -166,6 +175,9 @@
                 border: 2px solid var(--hower-color);
                 border-radius: 2px;
                 background-color: var(--hower-color);
+                @media screen and (min-width:$desktop) {
+                    bottom: -29px;
+                    }
             }
     }
     
@@ -174,7 +186,11 @@
 .contacts__list {
     display: flex;
     flex-direction: column-reverse;
-
+    & a:hover
+    svg{
+        fill:var(--hower-color);
+        color: var(--hower-color);
+    }
         @media (min-width:$tablet) {
             margin-left:84px;
             padding-bottom: 21px;
@@ -182,8 +198,19 @@
             display: block;
             & li:first-child{
                 margin-bottom: 10px;
+                margin-right: 30px;
             }
         }
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            margin-left: 305px;
+            flex-direction: row;  
+            align-items: baseline;
+            & li:first-child{
+                margin-bottom: 0;
+            }
+        }
+
 }
 
 .navigation__email {
@@ -202,6 +229,12 @@
         color: var(--primary-text-color);
         margin-bottom: 62px;
     }
+    @media (min-width:$desktop) {
+
+        &:hover{
+            color: var(--hower-color);
+        }
+    }
 }
 
 .navigation__icon {
@@ -209,9 +242,11 @@
     height: 10;
     width: 14;
     fill:var(--primary-text-color) ;
+    
     @media screen and (max-width:767px) {
             display: none;
         }
+    
 }
 
 .navigation__tel {
@@ -219,7 +254,7 @@
     font-weight: 500;
     line-height: 1.1;
     color: var(--primary-text-color);
-
+    
 
     @media screen and (max-width:767px){
         display: block;
@@ -228,6 +263,11 @@
         line-height: 1.17;
         color: var(--hower-color);
         margin-bottom: 32px;
+    }
+    @media (min-width:$desktop) {
+        &:hover{
+            color: var(--hower-color);
+        }
     }
 }
 

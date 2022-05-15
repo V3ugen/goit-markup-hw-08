@@ -2,6 +2,11 @@
 .our-projects {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width:767px) {
+            
+        justify-content: center;
+        }
+    
 }
 
 .our-projects__btn:not(:last-child) {
@@ -36,10 +41,29 @@
     }
 }
 
-.our-projects__list {}
+.our-projects__list {
+    @media screen and (min-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+        
+        margin-left: -30px;
+    }
+    @media screen and (min-width:$desktop) {
+        
+    }
+}
+
 
 .our-projects__item {
     margin-top: 30px;
+    @media screen and (min-width:767px) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    @media screen and (min-width:$desktop) {
+        flex-basis: calc(100% / 3 - 30px);
+    }
 }
 
 .our-projects__link {
@@ -56,6 +80,10 @@
     & img{
         width: 450px;
         height: 294px;
+    
+    @media screen and (min-width:767px) {
+        width: 354px;
+        }
     }
 }
 
@@ -107,4 +135,11 @@
 
     color: var(--primary-text-color);
     margin-top: 4px;
+    @media screen and (min-width:767px) {
+        &.only{
+            margin-bottom: 36px;
+        }
+        
+        
+    }
 }
