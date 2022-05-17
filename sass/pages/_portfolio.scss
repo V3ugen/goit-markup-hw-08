@@ -81,11 +81,12 @@
         width: 450px;
         height: 294px;
     
-    @media screen and (min-width:767px) {
+    @media screen and (max-width:767px) {
         width: 354px;
         }
     }
 }
+
 
 .overlay {
     position: absolute;
@@ -135,7 +136,7 @@
 
     color: var(--primary-text-color);
     margin-top: 4px;
-    @media screen and (min-width:767px) {
+    @media screen and (max-width:1024px) {
         &.only{
             margin-bottom: 36px;
         }

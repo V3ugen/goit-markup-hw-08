@@ -4,8 +4,11 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    @media screen and (min-width:$modile) {
-        width: $modile;
+    @media screen and (min-width:320px)and (max-width:$modile) {
+        width: 320px;
+    }
+    @media screen and (min-width:479px) {
+        width:$modile;
     }
     @media screen and (min-width:$tablet) {
         width: $tablet;

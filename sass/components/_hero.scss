@@ -67,7 +67,10 @@
 
     margin-bottom: 30px;
 
-
+    @media screen and (min-width:$desktop) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
 }
 
 .button--main {
@@ -86,4 +89,5 @@
 
     padding: 10px 32px;
     min-width: 200px;
+    
 }

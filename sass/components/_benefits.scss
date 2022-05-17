@@ -5,12 +5,10 @@
 .hide {}
 
 .benefits__list {
-
+    
     & li:not(:last-child){
         margin-bottom: 30px;
-        @media screen and (min-width:767px) {
-            margin-bottom: 0;
-        }
+        
     }
     @media screen and (min-width:767px) {
         display: flex;
@@ -21,7 +19,7 @@
             & li{
                 flex-basis: calc(100% / 2 - 30px);
                 margin-left: 30px;
-                margin-top: 30px;
+                
                 
             }
         }
@@ -41,10 +39,13 @@
     background: var(--button-color);
     border-radius: 4px;
 
+    
 }
 
 
-.benefits__icon {}
+.benefits__icon {
+
+}
 
 .benefits__title {
     margin-bottom: 10px;
@@ -55,8 +56,8 @@
     text-transform: uppercase;
     color: var(--logo-color);
     text-align: center;
-    @media screen and (min-width:$desktop) {
-            text-align: unset;
+    @media screen and (min-width:$tablet) {
+            text-align: left;
         }
 }
 
@@ -72,16 +73,8 @@
 
 .team {}
 
-.team__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
 
-    color: var(--secondary-color);
 
-    margin-bottom: 50px;
-}
 .team__list {
 
 }
@@ -89,7 +82,8 @@
 .team__item {}
 
 .team-picture {
-    position: relative;}
+    position: relative;
+}
 
 .picture {}
 

@@ -53,6 +53,7 @@
     }
 }
 .menu-button {
+    z-index: 3;
     position: absolute;
 
     top:20%;
@@ -75,9 +76,11 @@
 }
 .menu-button .icon-close {
     display: none;
+
 }
 
 .menu-button.is-open .icon-close {
+    position: fixed;
     display: block;
     fill: var(--logo-color);
     &:hover {
@@ -89,6 +92,7 @@
     display: none;
 }
 .menu-container{
+    z-index: 2;
     display: none;
     position: relative;
     background-color: var(--primary-bg-color);
@@ -96,12 +100,14 @@
     
         left: 0;
         top: 0;
-        width: 88vw;
+        width: 100vw;
         height: 100vh;
 
     &.is-open{
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 48px 0 48px 40px;
+    
     }
     @media (min-width:$tablet) {
         &.is-open{
@@ -120,7 +126,8 @@
 }
 
 .navigation__list {
-    margin-bottom: 302px;
+    
+
 
     @media (min-width:$tablet) {
         margin-bottom: 0;
@@ -129,7 +136,7 @@
         
         }
 }
-@media (min-width:$tablet) {
+    @media (min-width:$tablet) {
     .navigation__item {
     
         &:not(:last-child){
@@ -169,7 +176,7 @@
         &::after {
                 content: "";
                 position: absolute;
-                bottom: -26px;
+                bottom: -23px;
                 left: 0;
                 width: 100%;
                 border: 2px solid var(--hower-color);
@@ -185,6 +192,7 @@
 
 .contacts__list {
     display: flex;
+    margin-top: auto;
     flex-direction: column-reverse;
     & a:hover
     svg{
@@ -230,7 +238,7 @@
         margin-bottom: 62px;
     }
     @media (min-width:$desktop) {
-
+        font-size: 14px;
         &:hover{
             color: var(--hower-color);
         }
@@ -265,10 +273,15 @@
         margin-bottom: 32px;
     }
     @media (min-width:$desktop) {
+        font-size: 14px;
         &:hover{
             color: var(--hower-color);
         }
     }
+}
+.contact{
+    display: flex;
+    align-items: center;
 }
 
 .social-list-header{
