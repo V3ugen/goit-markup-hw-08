@@ -4,24 +4,24 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    @media screen and (min-width:320px)and (max-width:$modile) {
+    @media screen and (min-width: 320px) and (max-width: $modile) {
         width: 320px;
     }
-    @media screen and (min-width:479px) {
-        width:$modile;
+    @media screen and (min-width: 479px) {
+        width: $modile;
     }
-    @media screen and (min-width:$tablet) {
+    @media screen and (min-width: $tablet) {
         width: $tablet;
     }
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         width: $desktop;
     }
 }
-.section{
+.section {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width: $desktop) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -29,8 +29,7 @@
 .section--hide {
     padding-top: 0;
 
-@media screen and(max-width: $desktop) {
-    display: none;
-    
-}
+    @media screen and(max-width: $desktop) {
+        display: none;
+    }
 }

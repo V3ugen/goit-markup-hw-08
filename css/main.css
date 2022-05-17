@@ -322,7 +322,7 @@ body.modal-open {
 
 @media (min-width: 768px) {
   .navigation--active::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -23px;
     left: 0;
@@ -335,7 +335,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .navigation--active::after {
-    bottom: -29px;
+    bottom: -28px;
   }
 }
 
@@ -350,8 +350,7 @@ body.modal-open {
           flex-direction: column-reverse;
 }
 
-.contacts__list a:hover
-svg {
+.contacts__list a:hover svg {
   fill: var(--hower-color);
   color: var(--hower-color);
 }
@@ -1209,6 +1208,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .subscribe-box {
+    width: auto;
     margin-top: 0;
     margin-left: auto;
   }

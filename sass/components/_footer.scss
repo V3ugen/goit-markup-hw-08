@@ -2,10 +2,9 @@
     background-color: var(--bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
-        @media screen and (min-width:767px) {
-                padding-top: 0 ;
-            
-            }
+    @media screen and (min-width: 767px) {
+        padding-top: 0;
+    }
 }
 
 .footer {
@@ -14,22 +13,22 @@
     align-items: center;
     justify-content: space-around;
 
-    @media screen and (min-width:767px) and (max-width:$desktop) {
+    @media screen and (min-width: 767px) and (max-width: $desktop) {
         flex-direction: unset;
         align-items: baseline;
         flex-wrap: wrap;
         justify-content: space-around;
-        }
-    @media screen and (min-width:$desktop) {
+    }
+    @media screen and (min-width: $desktop) {
         padding-top: 60px;
         padding-bottom: 60px;
         flex-direction: unset;
-        }
+    }
 }
-.info{
+.info {
     text-align: center;
-    @media screen and (max-width:$desktop) {
-    text-align: none;
+    @media screen and (max-width: $desktop) {
+        text-align: none;
     }
 }
 
@@ -39,29 +38,29 @@
     font-size: 24px;
     line-height: 1.19;
     font-weight: 400;
-    @media screen and (min-width:767px) {
-            display: flex;
-            justify-content: center;
-        }
-    @media screen and (min-width:$desktop) {
-            justify-content: left;
-        }
+    @media screen and (min-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+        justify-content: left;
+    }
 }
 
 .address {
     margin-top: 20px;
-        @media screen and (min-width:767px) {
-            margin-top: 20px;
-            }
+    @media screen and (min-width: 767px) {
+        margin-top: 20px;
+    }
 }
 
 .address__list {
-    @media screen and (min-width:767px) {
-            text-align: center;
-        }
-        @media screen and (min-width:$desktop) {
-            text-align: left;
-        }
+    @media screen and (min-width: 767px) {
+        text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
 }
 
 .address__link {
@@ -83,8 +82,8 @@
 
 .join {
     margin-top: 60px;
-    @media screen and (min-width:$desktop) {
-            & {
+    @media screen and (min-width: $desktop) {
+        & {
             margin-top: 0;
             margin-left: 70px;
         }
@@ -100,11 +99,10 @@
     color: var(--primary-bg-color);
     text-align: center;
 
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         text-align: start;
     }
 }
-
 
 .social--footer {
     margin-top: 20px;
@@ -116,12 +114,11 @@
     height: 44px;
     border-radius: 50%;
     fill: var(--border-color);
-    
-    background: rgba(255, 255, 255, 0.1);
-    transition:
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
         fill: var(--border-pict-color);
         background-color: var(--hower-color);
     }
@@ -139,9 +136,9 @@
     margin-top: 60px;
     width: 100%;
     form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     input {
         padding: 15px;
@@ -152,25 +149,26 @@
         border-color: rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         color: var(--border-pict-color);
-    
+
         &:focus {
             outline: 0;
-            }
+        }
     }
-    @media screen and (min-width:767px) and (max-width:$desktop) {
-        & input{
+    @media screen and (min-width: 767px) and (max-width: $desktop) {
+        & input {
             width: 450px;
         }
     }
-        @media screen and (min-width:$desktop) {
-        &{
+    @media screen and (min-width: $desktop) {
+        & {
+            width: auto;
             margin-top: 0;
             margin-left: auto;
         }
-        & form{
+        & form {
             flex-direction: unset;
         }
-        & input{
+        & input {
             width: 358px;
         }
     }
@@ -196,10 +194,10 @@
 
     padding: 0 28px;
 
-    svg{
+    svg {
         margin-left: 10px;
     }
-        @media screen and (min-width:$desktop) {
-            margin-left: 12px;
-        }
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+    }
 }
