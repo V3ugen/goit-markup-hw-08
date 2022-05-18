@@ -1648,17 +1648,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-.our-projects-overlay img {
-  width: 450px;
-  height: 294px;
-}
-
-@media screen and (max-width: 767px) {
-  .our-projects-overlay img {
-    width: 354px;
-  }
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -1705,11 +1694,5 @@ body.modal-open {
   line-height: 1.87;
   color: var(--primary-text-color);
   margin-top: 4px;
-}
-
-@media screen and (max-width: 1024px) {
-  .our-projects__text.only {
-    margin-bottom: 36px;
-  }
 }
 /*# sourceMappingURL=main.css.map */
