@@ -1,61 +1,57 @@
-
 .hero {
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
     max-width: 480px;
-    height:421px;
+    height: 421px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg480.jpg);
+        url(../images/bg/bg480.jpg);
     background-repeat: no-repeat;
     background-size: 480px 421px;
     background-color: #2f303a;
     text-align: center;
 
-@media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
-        (min-resolution: 2dppx) { 
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/bg480@2x.jpg);
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg/bg480@2x.jpg);
     }
 
-
-
-@media screen and (min-width:$tablet) {
-    max-width: 768px;
-    height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg768.jpg);
-    background-size: 768px 400px;
-    
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media screen and (min-width: $tablet) {
+        max-width: 768px;
+        height: 400px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bg768@2x.jpg);
-        }
-}
+            url(../images/bg/bg768.jpg);
+        background-size: 768px 400px;
 
-    @media screen and (min-width:1200px) {
-    max-width:1600px;
-    height: 600px;
-    padding-bottom: 200px;
-    padding-top: 200px;
-    background-size: 1600px 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg1200.jpg);
-    
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bg/bg768@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
+        padding-bottom: 200px;
+        padding-top: 200px;
+        background-size: 1600px 600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bg1200@2x.jpg);
-        }
+            url(../images/bg/bg1200.jpg);
 
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bg/bg1200@2x.jpg);
+        }
     }
 }
 
@@ -67,10 +63,10 @@
 
     margin-bottom: 30px;
 
-    @media screen and (min-width:$desktop) {
-            font-size: 44px;
-            line-height: 1.36;
-        }
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .button--main {
@@ -89,5 +85,4 @@
 
     padding: 10px 32px;
     min-width: 200px;
-    
 }

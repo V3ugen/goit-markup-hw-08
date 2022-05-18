@@ -166,29 +166,37 @@
                     <ul class="team__list">
                         <li class="team__item">
                             <div class="team-picture picture">
-                                <img
-                                    src="./images/box_1.jpg"
-                                    alt="Програмирование"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="../images/box1.jpg 1x, ../images/box1@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <img src="./images/box1.jpg" alt="фото Десктопные приложения" />
+                                </picture>
                                 <p class="team-picture__text">Десктопные приложения</p>
                             </div>
                         </li>
                         <li class="team__item">
                             <div class="team-picture picture">
-                                <img
-                                    src="./images/box_2.jpg"
-                                    alt="Кроссплатформенность"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="../images/box2.jpg 1x, ../images/box2@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <img src="./images/box2.jpg" alt="фото Мобильные приложения" />
+                                </picture>
                                 <p class="team-picture__text">Мобильные приложения</p>
                             </div>
                         </li>
                         <li class="team__item">
                             <div class="team-picture picture">
-                                <img src="./images/box_3.jpg" alt="Дизайн" width="370" height="294" />
+                                <picture>
+                                    <source
+                                        srcset="../images/box3.jpg 1x, ../images/box3@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <img src="./images/box3.jpg" alt="фото Дизайнерские решения" />
+                                </picture>
                                 <p class="team-picture__text">Дизайнерские решения</p>
                             </div>
                         </li>
@@ -202,13 +210,30 @@
                     <ul class="team__list">
                         <li class="team__item">
                             <picture>
-                                <source srcset="./images/igor@2x.webp" type="image/webp" />
-                                <source />
+                                <source
+                                    srcset="
+                                        ../images/desktop/igor.jpg    1x,
+                                        ../images/desktop/igor@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/tablet/igor--tablet.jpg    1x,
+                                        ../images/tablet/igor@2x--tablet.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/mobile/igor--mobile.jpg    1x,
+                                        ../images/mobile/igor@2x--mobile.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
                                 <img
-                                    src="./images/igor.jpg"
-                                    alt="Фото Игорь Демельяненко"
-                                    width="270"
-                                    height="260"
+                                    src="../images/mobile/igor--mobile.jpg"
+                                    alt="nikolau Игорь Демьяненко"
                                 />
                             </picture>
                             <div class="our-team__box">
@@ -247,12 +272,30 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                src="./images/photo2.jpg"
-                                alt="Фото Ольга Репина"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ../images/desktop/olga.jpg    1x,
+                                        ../images/desktop/olga@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/tablet/olga--tablet.jpg    1x,
+                                        ../images/tablet/olga@2x--tablet.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/mobile/olga--mobile.jpg    1x,
+                                        ../images/mobile/olga@2x--mobile.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img src="../images/mobile/olga--mobile.jpg" alt="фото Ольга Репина" />
+                            </picture>
                             <div class="our-team__box">
                                 <h3 class="our-team__subtitle">Ольга Репина</h3>
                                 <p class="our-team__text">Frontend Developer</p>
@@ -289,12 +332,30 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                src="./images/photo3.jpg"
-                                alt="Фото Николай Тарасов"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ../images/desktop/nikmihail.jpg  1x,
+                                        ../images/desktop/nikolai@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/tablet/nikolau--tablet.jpg    1x,
+                                        ../images/tablet/nikolau@2x--tablet.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/mobile/nikolau--mobile.jpg    1x,
+                                        ../images/mobile/nikolau@2x--mobile.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img src="../images/mobile/nikolau--mobile.jpg" alt="" />
+                            </picture>
                             <div class="our-team__box">
                                 <h3 class="our-team__subtitle">Николай Тарасов</h3>
                                 <p class="our-team__text">Marketing</p>
@@ -331,12 +392,30 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                src="./images/photo4.jpg"
-                                alt="Фото Михаил Ермаков"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ../images/desktop/mihail.jpg    1x,
+                                        ../images/desktop/mihail@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/tablet/mihail--tablet.jpg    1x,
+                                        ../images/tablet/mihail@2x--tablet.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ../images/mobile/mihail--mobile.jpg    1x,
+                                        ../images/mobile/mihail@2x--mobile.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img src="../images/mobile/mihail--mobile.jpg" alt="" />
+                            </picture>
                             <div class="our-team__box">
                                 <h3 class="our-team__subtitle">Михаил Ермаков</h3>
                                 <p class="our-team__text">UI Designer</p>
