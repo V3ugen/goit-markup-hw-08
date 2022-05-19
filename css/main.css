@@ -202,6 +202,10 @@ body.modal-open {
   margin-right: auto;
 }
 
+.menu-button .is-open {
+  overflow-y: scroll;
+}
+
 .menu-button:hover {
   fill: var(--hower-color);
 }
@@ -233,7 +237,6 @@ body.modal-open {
 .menu-container {
   z-index: 2;
   display: none;
-  position: relative;
   background-color: var(--primary-bg-color);
   position: fixed;
   left: 0;
@@ -989,12 +992,6 @@ body.modal-open {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 767px) {
-  .footer-bg {
-    padding-top: 0;
-  }
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1028,8 +1025,6 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
     -webkit-box-orient: unset;
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
