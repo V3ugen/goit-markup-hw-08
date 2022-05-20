@@ -358,6 +358,11 @@ body.modal-open {
           flex-direction: column-reverse;
 }
 
+.contacts__list a:hover {
+  fill: var(--hower-color);
+  color: var(--hower-color);
+}
+
 .contacts__list a:hover svg {
   fill: var(--hower-color);
   color: var(--hower-color);

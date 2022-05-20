@@ -182,6 +182,10 @@
     display: flex;
     margin-top: auto;
     flex-direction: column-reverse;
+    & a:hover {
+        fill: var(--hower-color);
+        color: var(--hower-color);
+    }
     & a:hover svg {
         fill: var(--hower-color);
         color: var(--hower-color);
