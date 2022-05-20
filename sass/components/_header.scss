@@ -74,7 +74,10 @@
 .menu-button .icon-close {
     display: none;
 }
-
+.menu-button.is-open {
+    position: fixed;
+    top: 3%;
+}
 .menu-button.is-open .icon-close {
     position: fixed;
     display: block;
@@ -218,6 +221,10 @@
 
         color: var(--primary-text-color);
         margin-bottom: 62px;
+
+        &:hover {
+            color: var(--hower-color);
+        }
     }
     @media (min-width: $desktop) {
         font-size: 14px;
